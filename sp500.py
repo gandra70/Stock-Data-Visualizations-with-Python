@@ -35,7 +35,7 @@ plot.rect(df.index[df.Status == "Increase"],
           df.Middle[df.Status == "Increase"],
           hours12,
           df.Height[df.Status == "Increase"],
-          fill_color = "#e01414",
+          fill_color = "#142be0",
           line_color = "black"
           )
 
@@ -43,7 +43,7 @@ plot.rect(df.index[df.Status == "Decrease"],
           df.Middle[df.Status == "Decrease"],
           hours12,
           df.Height[df.Status == "Decrease"],
-          fill_color = "#142be0",
+          fill_color = "#e01414",
           line_color = "black"
           )
 
