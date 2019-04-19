@@ -11,6 +11,8 @@ pylint = "*"
 bokeh = "*"
 pandas = "*"
 pandas-datareader = "*"
+math = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.7"
