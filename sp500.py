@@ -8,8 +8,12 @@ from pandas_datareader.tests import yahoo
 startDate = datetime.datetime(2018, 1, 1)
 endDate = pd.datetime.now()
 df = data.DataReader(name="^GSPC", data_source="yahoo", start=startDate , end=endDate )
+TOOLS = "pan,wheel_zoom,box_zoom,reset,save"
+plot = figure(x_axis_type='datetime', tools=TOOLS, plot_width=1000, title = "S&P500")
+plot.xaxis.major_label_orientation = 3.14 / 4
+plot.grid.grid_line_alpha=0.3
 
-plot = figure(x_axis_type='datetime', width=1000, height=300)
+plot.segment(df.index, df.High, df.index, df.Low, color="Black")
 
 def increaseDecrease(closePrice , openPrice):
     if closePrice > openPrice:
