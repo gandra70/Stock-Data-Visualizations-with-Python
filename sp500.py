@@ -1,12 +1,9 @@
 import datetime
 from math import pi
-
-import numpy as np
 import pandas as pd
 from bokeh.models import BoxSelectTool
 from bokeh.models.tools import HoverTool
 from bokeh.plotting import ColumnDataSource, figure, output_file, show
-from numpy.core.umath import FLOATING_POINT_SUPPORT
 from pandas_datareader import data
 from pandas_datareader.tests import yahoo
 
